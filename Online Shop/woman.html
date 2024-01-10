@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Для девушек</title>
+    
+</head>
+<style>
+    body{
+        background-color:rgba(246, 168, 168, 0.923);
+    }
+    /* pannel */
+    #navbar {
+/* position: fixed; */
+margin: 10px;
+padding: 10px;
+list-style-type: none;
+}
+#navbar li { display: inline; }
+
+#navbar {
+margin: 0;
+padding: 0;
+list-style-type: none;
+border: 2px solid black;
+border-radius: 15px 15px;
+width: 1260px;
+text-align: center;
+background-color: white;
+}
+#navbar a {
+color: rgb(9, 0, 0);
+padding: 5px 10px;
+text-decoration: none;
+font-weight: bold;
+display: inline-block;
+width: 150px;
+}
+#navbar a:hover {
+border-radius: 20px 20px;
+background-color: rgb(191, 90, 191) ;
+}
+
+.container_slider_css{
+    margin:50px auto; 
+    width:500px;
+    height:300px;
+    border: 5px rgb(255, 255, 255) solid;
+    border-radius: 25px;
+    overflow:hidden;
+    position:relative;
+
+}
+.photo_slider_css{position:absolute;animation:round 10s infinite;opacity:0;width:100%}
+@keyframes round {
+25%{opacity:1}
+40%{opacity:0}
+}
+img:nth-child(1){animation-delay:12s}
+img:nth-child(2){animation-delay:8s}
+img:nth-child(3){animation-delay:4s}
+img:nth-child(4){animation-delay:0}
+@media(min-width:0px) and (max-width:320px) {
+.container_slider_css{width:80%;height:190px}
+}
+@media(min-width:321px) and (max-width:480px) {
+.container_slider_css{width:80%;height:190px}
+}
+/* для девушек */
+.dropbtn {
+    
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 60px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: rgb(8, 8, 8);}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #fcfcfc;}
+
+/* товары */
+.dress{
+margin: 100px;
+}
+
+/* кнопка наверх */
+
+.topbutton {
+width:100px;
+border:2px solid #ccc;
+background:#f7f7f7;
+text-align:center;
+padding:10px;
+position:fixed;
+bottom:50px;
+right:50px;
+cursor:pointer;
+color:#333;
+font-family:verdana;
+font-size:12px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-khtml-border-radius: 5px;
+}
+
+/*  */
+/*  */
+
+</style>
+<body>
+<!-- pannel -->
+    <ul id="navbar">
+    
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="girl.html">Для девочек</a></li>
+        <li><a href="boy.html">Для мальчиков</a></li>
+        <div class="dropdown">
+            <li class="dropbtn"><a >Для девушек</a></li>
+            <div class="dropdown-content">
+                <a href="#dre">Платья, юбки</a>
+                <a href="#shi">Футболки, рубашки</a>
+                <a href="#tro">Брюки</a>
+                <a href="#sho">Обувь</a>
+                <a href="#top">Верхняя одежда</a>
+                <a href="#acs">Аксессуары</a>
+            </div>
+        </div>
+        <li><a href="guy.html">Для парней</a></li>
+        <li><a href="basket.html">Корзина</a></li>
+    </ul>
+
+
+
+        <!-- slider -->
+<div class="container_slider_css">
+    <img class="photo_slider_css" src="0-5.jpg" alt="">
+    <img class="photo_slider_css" src="0-6.jpg" alt="">
+    <img class="photo_slider_css" src="0-7.jpg" alt="">
+    <img class="photo_slider_css" src="0-8.png" alt="">
+</div>
+
+<!-- товары -->
+<div class="dress">
+
+    <a id="dre"><h2>Платья, юбки</h2></a>
+    <table >
+        <tr>
+            <td><img src="1p.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="4p.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="2p.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="3p.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="5p.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+        </tr>
+        <tr>
+            <td><b>Зеленое платье:20$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Черно-желтое платье:18$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Синий сарафан:29$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Осеннее платье:16$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Желто-серое платье:36$</b><button style="margin-left:35%;">В корзину</button></td>
+        </tr>
+
+        <tr>
+            <td><img src="s1.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="s2.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="s4.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="s3.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="s5.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+        </tr>
+        <tr>
+            <td><b>Юбка на резинке:18$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Юбка-трапеция:18$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Клетчатая юбка:27$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Длинная юбка:34$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Юбка на высокой пасадке:30$</b><button style="margin-left:35%;">В корзину</button></td>
+        </tr>
+
+    </table>
+
+
+    <a id="shi"><h2>Футболки, рубашки</h2></a>
+
+    <table>
+        <tr>
+            <td><img src="1t.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="2t.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="4t.jpeg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="3t.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="5t.jpeg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+        </tr>
+        <tr>
+            <td><b>Футболка off/on:9$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Черно-желтое платье:11$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Футболка с надписью:8$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Полосатая футболка:6$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Футболка с принтом:7$</b><button style="margin-left:35%;">В корзину</button></td>
+        </tr>
+        <tr>
+            <td><img src="r1.jpeg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="r2.png" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="r3.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="r4.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="r5.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+        </tr>
+        <tr>
+            <td><b>Рубашка с принтом:35$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Рубашка с нашивкой:23$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Клетчатая рубашка:30$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Белая рубашка:29$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Двухстороняя рубашка:26$</b><button style="margin-left:35%;">В корзину</button></td>
+        </tr>
+    </table>
+
+    <a id="tro"><h2>Брюки</h2></a>
+
+    <table>
+        <tr>
+            <td><img src="u1.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="u2.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="u3.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="u4.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="u5.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+        </tr>
+        <tr>
+            <td><b>Черные штаны:24$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Розовые штаны:17$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Цветные штаны:21$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Блестящие штаны:25$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Зеленые штаны:16$</b><button style="margin-left:35%;">В корзину</button></td>
+        </tr>
+        <tr>
+            <td><img src="u7.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="u6.jpeg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="u8.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="u9.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="u10.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+        </tr>
+        <tr>
+            <td><b>Черные классические брюки:32$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Зеленые брюки:30$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Серые классические брюки:25$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Кожаные штаны:17$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Джинсы:36$</b><button style="margin-left:35%;">В корзину</button></td>
+        </tr>
+    </table>
+
+    <a id="sho"><h2>Обувь</h2></a>
+
+    <table>
+        <tr>
+            <td><img src="i1.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="i2.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="i3.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="i4.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="i5.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+        </tr>
+        <tr>
+            <td><b>Замшевые туфли на каблуках:21$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Туфли черные:32$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Черные басаножки:30$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Белые туфли "уголки":21$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Закругленные туфли:31$</b><button style="margin-left:35%;">В корзину</button></td>
+        </tr>
+        <tr>
+            <td><img src="i7.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="i6.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="i8.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="i9.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="i10.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+        </tr>
+        <tr>
+            <td><b>Черные кроссовки:97$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Белые кроссовки:77$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Розово-белые кроссовки:36$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Березовые кроссовки:40$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Цветные кроссовки:54$</b><button style="margin-left:35%;">В корзину</button></td>
+        </tr>
+    </table>
+
+    <a id="top"><h2>Верхняя одежда</h2></a>
+
+    <table>
+        <tr>
+            <td><img src="1i.png" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="2i.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="4i.jpeg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="3i.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="5i.png" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+        </tr>
+        <tr>
+            <td><b>Укороченный кардиган:20$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Удлиненный кардиган:26$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Теплая жлетка:30$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Кожинка:27$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Джинсовка:29$</b><button style="margin-left:35%;">В корзину</button></td>
+        </tr>
+        <tr>
+            <td><img src="6i.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="7i.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="8i.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="9i.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="10i.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+        </tr>
+        <tr>
+            <td><b>Джинсовое пальто:48$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Пальто в клетку:50$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Серое пальто:40$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Укороченна куртка:41$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Удлиненная куртка:70$</b><button style="margin-left:35%;">В корзину</button></td>
+        </tr>
+    </table>
+
+    <a id="acs"> <h2>Аксессуары </h2></a>
+    <table>
+        <tr>
+            <td><img src="o1.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="o2.jpeg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="o3.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="o4.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="o5.jpeg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+        </tr>
+        <tr>
+            <td><b>Солнечные очки:15$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Браслет тонкий:4$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Кольца из стали:2$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Массивный браслет:7$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Сумка Jacquemus:477$</b><button style="margin-left:35%;">В корзину</button></td>
+        </tr>
+        <tr>
+            <td><img src="o7.jpeg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="o6.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="o8.jpeg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="p9.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+            <td><img src="o10.jpg" alt="" style=" width:200px; height:250px; border-radius: 20px;"></td>
+        </tr>
+        <tr>
+            <td><b>Сережки:2$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Ремень:12$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Заколки:1$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Ожерелье:9$</b><button style="margin-left:35%;">В корзину</button></td>
+            <td><b>Сумка:26$</b><button style="margin-left:35%;">В корзину</button></td>
+        </tr>
+    </table>
+</div>
+
+<a href="#" title="Вернуться к началу" class="topbutton">^Наверх</a>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
