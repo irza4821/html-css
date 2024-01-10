@@ -1,1 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: white;
+    }
+/* pannel */
+    #navbar {
+/* position: fixed; */
+margin: 10px;
+padding: 10px;
+list-style-type: none;
+}
+#navbar li { display: inline; }
+
+#navbar {
+margin: 0;
+padding: 0;
+list-style-type: none;
+border: 2px solid black;
+border-radius: 15px 15px;
+width: 1260px;
+text-align: center;
+background-color: white;
+}
+#navbar a {
+color: rgb(9, 0, 0);
+padding: 5px 10px;
+text-decoration: none;
+font-weight: bold;
+display: inline-block;
+width: 110px;
+}
+#navbar a:hover {
+border-radius: 20px 20px;
+background-color: rgb(255, 247, 102);
+}
+
+/* head */
+/* img1 */
+.d1{
+    margin-top: 25px;
+}
+.t1{
+    position: absolute;
+    top: 250px;
+    right: 150px;
+    font-size: 50px;
+}
+.t_1{
+    position: absolute;
+    top: 350px;
+    right: 100px;
+    font-size: 25px;
+}
+.new_collection{
+    margin-left: 45%;
+    padding-top: 50px;
+    font-size: 30px;
+}
+.summer2022{
+    margin-left: 35%;
+    padding-top: 15px;
+    font-size: 20px;
+}
+.cotalag{
+    position: absolute;
+    top: 1000px;
+    right: 150px;
+    font-size: 20px;
+}
+
+.button{
+    position: absolute;
+    top: 1200px;
+    right: 150px;
+    list-style-type: none;
+    color: white;
+}
+
+button{
+    border-radius: 15px;
+    border: 2px solid rgb(247, 227, 227);
+    background-color: rgb(190, 231, 44);
+    font-size: x-large;
+
+} 
+
+/* img2 */
+.d2{
+    margin-top: 10px;
+    height: 1200px;
+}
+.lead{
+    position: absolute;
+    margin-left: 40%;
+    top: 1450px;
+    font-size: 30px;
+}
+.dress{
+    position: absolute;
+    top: 1500px;
+    right: 400px;
+    font-size: 20px;
+}
+.foto{
+    position: absolute;
+    top: 1600px;
+    margin-left: 150px;
+}
+.fa-solid{
+    margin: 70px;
+    font-size: 120px;
+    color: rgb(78, 212, 75);
+}
+.fa-solid::before{
+    display: inline;
+}
+.icon1{
+margin-left: 60px;
+}
+.icon2{
+    position: relative;
+    bottom: 120px;
+    margin-left: 26%;
+}
+.icon3{
+    position: relative;
+    bottom: 230px;
+    margin-left: 650px;
+}
+.icon4{
+    position: relative;
+    bottom: 340px;
+    margin-left: 950px;
+}
+
+/* img3 */
+.d3{
+    position: absolute;
+    margin-top: 10px;
+    height: 500px;
+}
+/* регестрация */
+.form{
+    position: absolute;
+    top: 100px;
+    left: 70px;
+}
+* {
+   box-sizing: border-box;
+}
+body {
+   background: #F5E9D9;
+}
+.postcard {
+   max-width: 350px;
+   margin: 50px auto 0;
+   padding: 20px;
+   background: #fffdee;
+   border: 10px solid transparent;
+   border-image: 10 repeating-linear-gradient(135deg, #C42061, #C42061 10px, transparent 10px, transparent 20px, #FBCFDF 20px, #FBCFDF 30px, transparent 30px, transparent 40px);
+   font-family: 'Playfair Display';
+   color: #605756;
+}
+.form-row {
+   margin-bottom: 15px;
+}
+.form-row input[type="text"], .form-row input[type="email"], .form-row textarea {
+   width: 100%;
+   padding: 0 10px;
+   line-height: 35px;
+   border-width: 0;
+   outline: none;
+   background: transparent url(https://html5book.ru/wp-content/uploads/2016/12/bg-form.png) bottom left repeat-x;
+   background-size: 8px 35px;
+   font-family: 'Playfair Display';
+}
+.form-row textarea {
+   background-attachment: local;
+   background-repeat: repeat;
+   resize: none;
+}
+.form-row input[type="submit"] {
+   padding: 10px 20px;
+   margin-top: 10px;
+   background: #F67CA5;
+   border-width: 0;
+   cursor: pointer;
+   outline: none;
+   font-family: 'Playfair Display';
+   font-size: 13px;
+   letter-spacing: 1px;
+   color: #fffdee;
+   text-transform: uppercase;
+   transition: 1s cubic-bezier(.165, .84, .44, 1);
+}
+.form-row input[type=submit]:hover {
+   background: #C42061;
+}
+
+.comp{
+    margin-bottom: 50px;
+}
+/* kontakt */
+.kon{
+    position: relative;
+    left: 500px;
+    font-family: Arial, fantasy;  
+    font-size: xx-large; 
+}
+.nom{
+    position: relative;
+    left: 400px;
+    bottom: 300px;  
+    
+}
+/* map */
+.map {
+   top: 300px;
+   margin-left: 100px;
+   padding-left: 100px;
+
+}
+
+.container {
+     top: 400px;
+  margin-left: 100px;
+}
+/* категории */
+.dropbtn {
+    
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 60px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: rgb(8, 8, 8);}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #fcfcfc;}
+
+/* кнопка наверх */
+
+.topbutton {
+width:100px;
+border:2px solid #ccc;
+background:#f7f7f7;
+text-align:center;
+padding:10px;
+position:fixed;
+bottom:50px;
+right:50px;
+cursor:pointer;
+color:#333;
+font-family:verdana;
+font-size:12px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-khtml-border-radius: 5px;
+}
+
+
+</style>
+<body>
+    <!-- pannel -->    
+    <ul id="navbar">
+    <!-- категории -->
+    <a href="index.html" style="background-color:yellow; border-radius:15px;">Главная</a>
+    <div class="dropdown">
+        <li class="dropbtn"><a >Категории</a></li>
+        <div class="dropdown-content">
+        <a href="girl.html">Для девочек</a>
+        <a href="boy.html">Для мальчиков</a>
+        <a href="woman.html">Для девушек</a>
+        <a href="guy.html">Для парней</a>
+        </div>
+    </div>
+    
+        <li><a href="#cat">Каталог</a></li>
+        <li><a href="#hit">Хиты</a></li>
+        <li><a href="#comp">О компании</a></li>
+        <li><a href="#kon">Контакты</a></li>
+        <li><a href="login.html">Войти</a></li>
+    </ul>
+
+    <!-- head -->
+    <div class="conteiner">
+
+        <!-- img1 -->
+        <div class="d1">
+            <img src="1.jpg" width="100%" height="700px">
+            <div class="t1">
+                <span style="font-family: Marker Felt, fantasy, sans-serif;">
+                    Новинки этого лета
+                </span>
+            </div>
+            <div class="t_1"><span style="font-family: Courier, monospace, sans-serif;">
+                <b><br> Стильная одежда <br> по привлекательным ценам. 
+                    <br> Здесь Вы найдете ту одежду,<br> о которой мечтали.</b>
+            </span>
+        </div>
+        </div>
+
+        <div class="table1">
+            <div class="new_collection">
+                <span style="font-family: Arial, fantasy; ">
+                <a id="cat"><b>Новая коллекция</b> </a>
+                </span>
+            </div>
+            <div class="summer2022">
+                <b>Самые лучшие модели платьев из хорошего материала<br>собраны в нашем Новом каталоге "Лето 2022"</b>
+        </div>
+    <img src="4.png" >
+                
+    <div class="cotalag">
+        <b>Как получить?<br><br>
+        <i>Для получение каталога "Лето 2022" <br>
+        оставьте свои данные, и мы тут же вышлем<br>
+        Вам актуальный файл с новинками или <br>
+        можете сами скачать, нажав на кнопку.</i> </b>
+    </div>
+    <!-- кнопка -->
+    <div class="button">
+            <button type="submit" name="submit_button" value="main_button" ><a href="Vogue Singapore - Issue 11, January 2022  (1).pdf" style="color: white;">Получить каталог</a></button>
+    </div>
+    
+    </div>
+
+        <!-- img2 -->
+        <div class="d2"><img src="2.jpg" width="100%">
+            <div class="lead">
+                <span style="font-family: Arial, fantasy; ">
+            <a id="hit"> <b>Лидеры продаж</b> </a>
+                </span>
+            </div>
+            <div class="dress">
+                <b>Мы предлагаем платья и костюмы современных моделей<br>для девочек и мальчиков, для девушек и парней.</b>
+        </div>
+        <div class="foto">
+            <img src="5.jpg" width="300px" height="350px"> 
+            <img src="6.jpg" width="300px" height="350px"> 
+            <img src="7.jpg" width="300px" height="350px"> <br>
+            <p> &nbsp Белый костюм для девушек:11 090 руб.   &nbsp Серый удлиненный пиджак для парней:13 000 руб. &nbsp Платье для девочек:1 599 руб. </p> 
+        </div>
+        <!-- ИКОНКИ -->
+        
+            <span class="comp" style="font-family: Arial, fantasy; margin: 40%; font-size: xx-large;">
+            <a id="comp"><b>О компании</b> </a>
+            </span>
+        
+        
+            <i class="fa-solid fa-medal"></i> 
+            <i class="fa-solid fa-gift"></i>
+            <i class="fa-solid fa-truck-moving"></i>
+            <i class="fa-solid fa-wand-sparkles"></i>
+            <div class="icon1">
+                <b>ГАРАНТИИ <br> <br>
+                    Вся наша одежда <br>проходит обязательную <br>проверку качества <br> и маркированы <br> согласно стандарту
+                    </b>
+            </div>
+            <div class="icon2">
+                <b>ПОДАРКИ <br><br>
+                    Каждый еаш клиент <br>получает приятные бонусы и <br>подарки, участвует в акциях<br> и розыгрышах 
+                    </b>
+            </div>
+            <div class="icon3">
+                <b>ДОСТАВКА <br><br>
+                    Мы бесплатно доставим <br>до пяти моделей одежды <br>для комфортной примерки к <br> Вам домой или в офис
+                    </b>
+            </div>
+            <div class="icon4">
+                <b>СЕРВИС <br><br>
+                    Мы обеспечим комфорт <br>и уют, спокойную обстановку <br>и профессиональное <br> ненавязчивое обслуживание
+                    </b>
+            </div>
+            
+        </div>
+
+        <!-- img3 -->
+        <div class="d3"><img src="3.jpg" width="100%">
+            <!-- map -->
+            <section class="map">
+                <div class="container">
+                    <a id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12475.761579079655!2d68.7837448!3d38.5812204!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38b5d3df066586a7%3A0xa1b009674fa22e7b!2sMunisa%20Mall!5e0!3m2!1sru!2s!4v1652465624746!5m2!1sru!2s" width="800" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </a>
+                </div>
+            </section>
+            <!-- регестрация -->
+        <div class="form">
+            <span class="kon">
+                <a id="kon"><b>Контакты</b></a> <br>
+                </span>
+            <form action="" class="postcard">
+                <div class="form-row">
+                <label for="name">Ваше имя</label><input type="text" id="name" required>
+                </div>
+                <div class="form-row">
+                <label for="email">Ваш Email</label><input type="email" id="email" required>
+                </div>
+                <div class="form-row">
+                    <p>Пароль</p>
+                <input type="password">
+                </div>
+                <div class="form-row">
+                <input type="submit" value="Зарегестрироваться">
+                </div>
+                </form>
+
+                <span class="nom"> 
+                    <p><b>телефон:</b> +992 909 98 6472</p>
+                    <p><b>почта:</b> ruskrasa130522@gmai.com</p> 
+                <a href="#map"> 
+                <p>ТЦ "Муниса", ул.Фотех Ниёзи,</p>
+                <p> 3/1, г.Душанбе </p>
+                </a>
+                    <p>Мы будем рады видеть Вас в нашем магазине</p>
+                    <p>пн - пт с 10 до 20</p>
+                    <p>сб - вс с 10 до 28</p>
+                </span>
+        </div>
+
+        <a href="#" title="Вернуться к началу" class="topbutton">^Наверх</a>
+    
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
 
